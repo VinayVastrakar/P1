@@ -1,0 +1,59 @@
+{
+    "name": "Vinay Vastrakar",
+    "title": "Software Developer | Java | Spring Boot",
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Me",
+        "content": [
+          "Motivated and aspiring software developer with a strong foundation in programming concepts and a keen interest in software development."
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Education",
+        "content": [
+          "RSR Rungta Institute Of Technology - B.Tech in IT (CGPA: 9.36) (2018-2022)",
+          "Saraswati Shishu Mandir - Higher Secondary Certificate (2015-2017)"
+        ]
+      },
+      {
+        "id": "experience",
+        "title": "Experience",
+        "content": [
+          "Software Developer - Gloitel Consultancy Pvt Ltd (Oct 2023 - Present)",
+          "Designed and implemented a robust Hospital Management Software with role-based authentication.",
+          "Worked on the CGMMSSY website to ensure optimal user experience."
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "Projects",
+        "content": [
+          "E-Commerce Website - GitHub: https://github.com/VinayVastrakar/My-Shopping",
+          "Vaccination Booking System - GitHub: https://github.com/VinayVastrakar/Vaccination-Booking-System",
+          "Airline Management System - GitHub: https://github.com/VinayVastrakar/Airline-Management"
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Technical Skills",
+        "content": [
+          "Java, HTML, CSS, Javascript, MySQL",
+          "Spring Boot, React, Hibernate",
+          "Git, GitHub, IntelliJ, NetBeans"
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "content": [
+          "Email: vinayvastrakar13@gmail.com",
+          "LinkedIn: https://linkedin.com/in/vinay-vastrakar",
+          "GitHub: https://github.com/VinayVastrakar",
+          "Phone: 7974678511"
+        ]
+      }
+    ]
+  }
+  
