@@ -4,16 +4,17 @@ import data from "./Data/data.json";
 
 const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false); // Added state for mobile menu
 
   useEffect(() => {
     setPortfolioData(data);
   }, []);
 
-
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen(false); // Close menu on navigation (for mobile)
     }
   };
 
@@ -24,17 +25,22 @@ const Portfolio = () => {
       <header>
         <h1>{portfolioData.name}</h1>
         <p>{portfolioData.title}</p>
-        <nav>
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button> {/* Added menu button for mobile */}
+        <nav className={menuOpen ? "nav-open" : ""}>
           <ul>
             {portfolioData.sections.map((section) => (
               <li key={section.id}>
-                {/* <a href={`#${section.id}`}>{section.title}</a> */}
-                <button onClick={() => handleScroll(section.id)} className="nav-button">{section.title}</button>
-                </li>
+                <button onClick={() => handleScroll(section.id)} className="nav-button">
+                  {section.title}
+                </button>
+              </li>
             ))}
           </ul>
         </nav>
       </header>
+
       {portfolioData.sections.map((section) => (
         <section key={section.id} id={section.id}>
           <h2>{section.title}</h2>
